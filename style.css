@@ -8,7 +8,10 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-
+.container {
+  max-width: 1200;
+  margin: 0 auto;
+}
 body {
   font-family: sans-serif;
   color: #333;
@@ -82,4 +85,39 @@ p {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 5;
+}
+@media screen and (max-width: 960px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .show-modal {
+    padding: 1.55rem 2.5rem;
+    margin: 3rem 1rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .show-modal {
+    padding: 1.33rem 2rem;
+    margin: 2rem 1rem;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 30%;
+  }
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .show-modal {
+    font-size: 12px;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+  }
 }
